@@ -103,18 +103,22 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Crack.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ToolKit.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Crack.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="Offsets.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="ToolKit.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Main.def" />

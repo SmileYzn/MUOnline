@@ -11,30 +11,54 @@
     <Filter Include="StdAfx">
       <UniqueIdentifier>{23f939ad-1140-4dbb-8ed8-1f5b810af64b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main\Main">
+      <UniqueIdentifier>{32a48cf6-a3ac-4c34-b389-61fca6a9bae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Offset">
+      <UniqueIdentifier>{bb75d42b-7128-405f-b450-50ac93467aaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Crack">
+      <UniqueIdentifier>{165920fc-2108-4caa-bec7-1b47a0919323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\ToolKit">
+      <UniqueIdentifier>{caed7dbf-3a84-4c52-9680-adfe6a5d7e58}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Main</Filter>
-    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>StdAfx</Filter>
     </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Crack.cpp">
+      <Filter>Main\Crack</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolKit.cpp">
+      <Filter>Main\ToolKit</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Main.h">
-      <Filter>Main</Filter>
-    </ClInclude>
     <ClInclude Include="Resource.h">
       <Filter>Resources</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
       <Filter>StdAfx</Filter>
     </ClInclude>
-    <ClInclude Include="Offsets.h">
-      <Filter>Main</Filter>
-    </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Main\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>Main\Offset</Filter>
+    </ClInclude>
+    <ClInclude Include="Crack.h">
+      <Filter>Main\Crack</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolKit.h">
+      <Filter>Main\ToolKit</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
