@@ -29,3 +29,5 @@
 
 #include "Main.h"
 #include "Offsets.h"
+#include "ToolKit.h"
+#include "Crack.h"
