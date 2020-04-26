@@ -6,11 +6,12 @@ extern "C" _declspec(dllexport) void EntryPoint()
 {
 	// Old Protect pointer
 	DWORD MainOldProtect = 0;
-
+	
 	// Protect the code to be executed
 	if(VirtualProtect(LPVOID(oMainEntryPoint),SIZE_T(oMainEndPoint),PAGE_EXECUTE_READWRITE,&MainOldProtect))
 	{
-		// Main entry point load
+		gConfig.Load();
+		gCrack.Load();		
 	}
 	else
 	{
