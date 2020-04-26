@@ -14,14 +14,23 @@
     <Filter Include="Main\Main">
       <UniqueIdentifier>{32a48cf6-a3ac-4c34-b389-61fca6a9bae9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Main\Offset">
-      <UniqueIdentifier>{bb75d42b-7128-405f-b450-50ac93467aaf}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Main\Crack">
       <UniqueIdentifier>{165920fc-2108-4caa-bec7-1b47a0919323}</UniqueIdentifier>
     </Filter>
     <Filter Include="Main\ToolKit">
       <UniqueIdentifier>{caed7dbf-3a84-4c52-9680-adfe6a5d7e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Fix">
+      <UniqueIdentifier>{c88649e1-2ce8-45e1-a84a-31960fea731a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Config">
+      <UniqueIdentifier>{8ba34b8c-a941-4524-b585-3626fec66e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\MemScript">
+      <UniqueIdentifier>{c0020f5e-4985-465f-beaf-bf6631f7d946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Offsets">
+      <UniqueIdentifier>{bb75d42b-7128-405f-b450-50ac93467aaf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +46,12 @@
     <ClCompile Include="ToolKit.cpp">
       <Filter>Main\ToolKit</Filter>
     </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Main\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="MemScript.cpp">
+      <Filter>Main\MemScript</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resource.h">
@@ -51,14 +66,20 @@
     <ClInclude Include="Main.h">
       <Filter>Main\Main</Filter>
     </ClInclude>
-    <ClInclude Include="Offsets.h">
-      <Filter>Main\Offset</Filter>
-    </ClInclude>
     <ClInclude Include="Crack.h">
       <Filter>Main\Crack</Filter>
     </ClInclude>
     <ClInclude Include="ToolKit.h">
       <Filter>Main\ToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Main\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="MemScript.h">
+      <Filter>Main\MemScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>Main\Offsets</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
