@@ -41,3 +41,22 @@
 #define oFixTabKeyLogin						0x0040B154			// Size 5
 #define oAllowTabSwithLoginJMP				0x0040B16F 			// JMP to this offset
 #define oFixTabKeyLogin_Byte				0x58				// Change according version to work!
+
+// Configuration class
+#define g_MainAddress						0x00E611B2			// connect.muonline.webzen.com
+#define g_MainAddressPointer				*(char**)0x00E609E0	// connect.muonline.webzen.com
+#define g_MainVersion						0x00E61F68			// 2274:
+#define g_MainSerial						0x00E61F70			// TbYehR2hFUPBKgZj
+#define g_MainServerPort					*(WORD*)0xE609E4	// 44405
+#define g_MainTitlePointer					0x00D269D0			// MU launching
+#define g_MainGameWindow					*(HWND*)0x00E8C578	// My Game Window
+#define g_SceneFlag							*(int*)0x00E609E8	// Main States
+#define g_m_Resolution						*(int*)0x00E8C240	// Resolution
+#define g_World								*(int*)0x00E61E18	// Current Map Index
+#define g_bUseWindowMode					*(DWORD*)0xE60974	// Window Mode
+
+#define g_MainVersion0						0x00E61F68			// Client Version 0 
+#define g_MainVersion1						0x00E61F69			// Client Version 1
+#define g_MainVersion2						0x00E61F6A			// Client Version 2 
+#define g_MainVersion3						0x00E61F6B			// Client Version 3 
+#define g_MainVersion4						0x00E61F6C			// Client Version 4 
