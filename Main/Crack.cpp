@@ -63,7 +63,7 @@ void cCrack::Load()
 	gToolKit.SetByte(oMainCrack3_4,0x90);
 
 	// Fix TAB key on login screen
-	gToolKit.SetHook(ASM::JMP,oFixTabKeyLogin,&this->AllowTabSwitchLogin);
+	gToolKit.SetHook(ASM::JMP,oFixTabKeyLogin,this->AllowTabSwitchLogin);
 
 	// Enable account field
 	gToolKit.SetByte(oAccountField,0x00);
@@ -76,13 +76,13 @@ void cCrack::Load()
 	gToolKit.SetWord(oCMStarterB,0x350);
 	gToolKit.SetByte(oCMStarterC,0x18);
 
-	// Bypass terrain files
-	gToolKit.SetByte((oFixTerrainFiles_1),0xEB);
-	gToolKit.SetByte((oFixTerrainFiles_2),0xEB);
-	gToolKit.SetByte((oFixTerrainFiles_3),0xEB);
-	gToolKit.SetByte((oFixTerrainFiles_4),0xEB);
-	gToolKit.SetByte((oFixTerrainFiles_5),0xEB);
-	gToolKit.SetByte((oFixTerrainFiles_6),0xEB);
+	// Bypass terrain files error
+	gToolKit.SetByte(oFixTerrainFiles_1,ASM::JMPS);
+	gToolKit.SetByte(oFixTerrainFiles_2,ASM::JMPS);
+	gToolKit.SetByte(oFixTerrainFiles_3,ASM::JMPS);
+	gToolKit.SetByte(oFixTerrainFiles_4,ASM::JMPS);
+	gToolKit.SetByte(oFixTerrainFiles_5,ASM::JMPS);
+	gToolKit.SetByte(oFixTerrainFiles_6,ASM::JMPS);
 
 	// Bypass Text.bmd limit
 	gToolKit.SetByte(oFixTextBMD,0xEB);
