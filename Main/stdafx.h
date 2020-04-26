@@ -30,4 +30,6 @@
 #include "Main.h"
 #include "Offsets.h"
 #include "ToolKit.h"
+#include "MemScript.h"
 #include "Crack.h"
+#include "Config.h"
